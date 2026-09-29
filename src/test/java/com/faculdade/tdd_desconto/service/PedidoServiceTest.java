@@ -33,6 +33,7 @@ class PedidoServiceTest {
 
         when(repository.buscarPorId(1L))
                 .thenReturn(Optional.of(pedidoOriginal));
+                //"Quando o Service pedir o pedido 1 ao repositório, finja que encontrou e me devolva este pedido fictício."
 
         when(repository.salvar(any(Pedido.class)))
                 .thenAnswer(invocation -> invocation.getArgument(0));
