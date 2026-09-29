@@ -11,3 +11,6 @@ public interface PedidoRepository {
 // Optional é uma classe usada
 // para evitar erros do tipo NullPointerException
 
+/*PedidoRepository (Interface):
+Defines o contrato de persistência (quais métodos existem, como buscarPorId e salvar).
+Permite que o PedidoService dependa de uma abstração.*/
